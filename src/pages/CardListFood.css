@@ -1,0 +1,53 @@
+
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.no-decoration:hover {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease; 
+}
+.rice-size{
+    font-size: 13px;
+}
+
+.card-text {
+    background-color: #f8f9fa; 
+    border-radius: 8px; 
+    padding: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.text-end {
+    font-weight: normal;
+    color: #333; 
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    text-align: right; 
+    padding: 5px 0; 
+    border-bottom: 1px solid #e0e0e0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.rice-size {
+    font-size: .9em;
+    font-weight: 400;
+} 
+
+

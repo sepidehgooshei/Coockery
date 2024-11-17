@@ -1,0 +1,54 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -350px; 
+    width: 350px;
+    height: 100%;
+    background-color:white;
+    transition: left 0.3s ease; 
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+.sidebar.open {
+    left: 0; 
+  }
+  
+.sidebar .card {
+    background-color: white;
+  }
+  
+.sidebar .card-body {
+    color: #2c3e50;
+  }
+  
+.navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+.nav-item {
+    list-style: none;
+  }
+  
+.nav-item button {
+    font-size: 18px;
+    color: #ecf0f1;
+    padding: 10px;
+  }
+   
+p{
+  font-size: .8rem;
+}  
+
+.text-decore{
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+.bg-hover:hover{
+  background-color:white;
+} 

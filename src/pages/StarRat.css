@@ -1,0 +1,19 @@
+.star-rating {
+    direction: rtl; /* برای نمایش ستاره‌ها از راست به چپ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.star {
+    font-size: 2.5rem;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-left: 0.5rem;
+}
+
+.hovered {
+    color: gold;
+}

@@ -1,0 +1,38 @@
+.text-decor {
+    text-decoration: none; /* No underline for the links */
+  }
+  
+.text-decor:hover {
+     color: #007bff; /* Optional: Change color on hover */
+  }
+
+/* .gray-bg{
+  position:absolute;
+  background-color: grey;
+  opacity: .3;
+  z-index: 1000;
+  right:0;
+  bottom: 25px;
+
+} */
+.image-container {
+  position: relative;
+}
+
+.gray-bg {
+  position: absolute;
+  background-color:rgb(47, 43, 43);
+  opacity: 0.5;
+  z-index: 1000;
+  top:125px;
+  right: 0;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 3px 1px 1px 3px;
+}
+
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
+}
