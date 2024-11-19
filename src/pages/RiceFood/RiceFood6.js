@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { RiceMeat } from "../../data/RiceFood.js";
-import AsideLeft from "../../components/AsideLeft.js";
-import CardListFood from "../CardListFood.js";
-import FooterRazim from "../../components/FooterRazim.js";
-import ReviewForm from "../../components/ReviewForm.js";
+import AsideLeft from "../../components/other/AsideLeft";
+import CardListFood from "../../components/other/CardListFood";
+import FooterRazim from "../../components/other/FooterRazim";
+import ReviewForm from "../../components/other/ReviewForm";
 import RedBarberry from "../../components/property/RedBarberry.js";
  
 export default function RiceFood6() {

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AppHeaderWatch from "../components/header/AppHeaderWatch";
 import AppSidebar from "../components/header/AppSidebar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; // includes both Bootstrap JS and Popper.js
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
 import Search from "../components/header/Search";
 
 export default function AppHeader() {
@@ -11,7 +11,6 @@ export default function AppHeader() {
   return (
     <div className="container-fluid position-relative sticky-top bg-white shadow-sm">
       <div className="row align-items-center py-2" style={{ backgroundColor: "#046865" }}>
-        {/* Left Section: Watch, Login */}
         <div className="d-flex justify-content-between w-100">
           <AppHeaderWatch />
           <div>
@@ -23,29 +22,24 @@ export default function AppHeader() {
       </div>
 
       <div className="row my-2 align-items-center">
-        {/* Logo Section */}
         <div className="col-auto">
           <a className="navbar-brand" href="#">
             <img src="../assets/skin/logonew2.png" alt="rezim" height="50" width="100" className="d-inline-block align-text-top"/>
           </a>
         </div>
         
-        {/* Navigation Links and Sidebar */}
         <div className="col">
           <ul className="nav d-flex align-items-center">
             <li className="nav-item">
               <AppSidebar />
             </li>
-            {/* Additional Navigation Links can go here */}
-          </ul>
+           </ul>
         </div>
       
-        {/* Search Bar */}
         <div className="col-4">
           <Search />
         </div>
     
-        {/* Social Media Icons */}
         <div className="col text-end">
           <span> <i className="fa-brands fa-instagram me-2 text-danger"></i></span> 
           <span> <i className="fa-brands fa-youtube text-danger me-2"></i></span>

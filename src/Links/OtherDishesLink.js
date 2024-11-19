@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
-import '../../src/pages/CardListFood.css'
-
+import "../components/other/CardListFood.css"
 export default function OtherDishesLinks(){
 const DishesLink = [
     {to:"/Recipe1",name:"یتیمچه"},
@@ -8,10 +7,10 @@ const DishesLink = [
     {to:"/Recipe3",name:"پیتزا تابه ای"},
     {to:"/Recipe4",name:"خوراک بادمجان"},
     {to:"/Recipe5",name:"بادمجان تابه ای"},
-    {to:"/Recipe5",name:"دو پیازه آلو شیرازی"},
-    {to:"/Recipe6",name:"سالاد گرم اسفناج"},
-    {to:"/Recipe7",name:"اسکالوپ مرغ"},
-    {to:"/Recipe8",name:"پولانی افغان"}
+    {to:"/Recipe6",name:"  دو پیازه آلو شیرازی " },
+    {to:"/Recipe7",name:" سالاد گرم اسفناج     "},
+    {to:"/Recipe8",name:"اسکالوپ مرغ"},
+    {to:"/Recipe9",name:"پولانی افغان"}
 ]
     return(
     <div className="card-text">

@@ -1,10 +1,10 @@
 import React,{useEffect} from 'react';
-import "../pages/dashboard.css"
+import "../../pages/dashboard/dashboard.css"
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
-import 'bootstrap/dist/js/bootstrap.bundle.min'; // Bootstrap JS for tooltips
-import {RiceMeat} from "../data/RiceFood"
-import FooterRazim from '../components/FooterRazim';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min'; 
+import {RiceMeat} from "../../data/RiceFood"
+import FooterRazim from '../../components/other/FooterRazim';
 export default function RiceWithMeat() {
  
   useEffect(() => {

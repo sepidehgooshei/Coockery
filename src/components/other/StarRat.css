@@ -1,5 +1,5 @@
 .star-rating {
-    direction: rtl; /* برای نمایش ستاره‌ها از راست به چپ */
+    direction: rtl; 
     display: flex;
     justify-content: center;
     align-items: center;

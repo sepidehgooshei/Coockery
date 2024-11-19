@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './dashboard.css';
-import { RiceMeat } from '../data/RiceFood';
-import { getToCookToMake } from '../data/ToCook';
-import FooterRazim from '../components/FooterRazim';
-import { useScrollToTop } from '../hooks/useScrollToTop';
+import { RiceMeat } from '../../data/RiceFood';
+import { getToCookToMake } from '../../data/ToCook';
+import FooterRazim from '../../components/other/FooterRazim';
+import { useScrollToTop } from '../../hooks/useScrollToTop';
 
 export default function Dashboard() {
   const allFoods = [...RiceMeat, ...getToCookToMake];

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import "./StarRat.css"
 function StarRating(){
-  const [rating, setRating] = useState(0); // امتیاز ثبت‌شده
-  const [hover, setHover] = useState(0); // امتیاز هاور‌شده
+  const [rating, setRating] = useState(0); 
+  const [hover, setHover] = useState(0); 
 
   return (
     <>
@@ -20,9 +20,9 @@ function StarRating(){
           <span
             key={index}
             className={`star ${ratingValue <= (hover || rating) ? 'hovered' : ''}`}
-            onClick={() => setRating(ratingValue)} // ثبت امتیاز با کلیک
-            onMouseEnter={() => setHover(ratingValue)} // ستاره‌ای که هاور شده است
-            onMouseLeave={() => setHover(0)} // زمانی که موس از روی ستاره خارج می‌شود
+            onClick={() => setRating(ratingValue)} 
+            onMouseEnter={() => setHover(ratingValue)} 
+            onMouseLeave={() => setHover(0)} 
           >
             ★
           </span>

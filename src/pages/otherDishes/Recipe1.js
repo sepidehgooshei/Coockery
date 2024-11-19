@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import AsideLeft from "../../components/AsideLeft";
-import CardListFood from "../CardListFood";
-import ReviewForm from "../../components/ReviewForm";
-import FooterRazim from "../../components/FooterRazim";
+import AsideLeft from "../../components/other/AsideLeft";
+import CardListFood from "../../components/other/CardListFood";
+import FooterRazim from "../../components/other/FooterRazim";
+import ReviewForm from "../../components/other/ReviewForm";
 import { getToCookToMake } from "../../data/ToCook";
 import Barberry from "../../components/property/Barberry";
-
+const riceFoodItem= getToCookToMake[0]
 export default function Recipe1() {
   const [open, setOpen] = useState(false);
 
-  // Toggle function that takes section identifier
   function handleToggle() {
     setOpen((prev) => !prev);
   }
@@ -17,6 +16,15 @@ export default function Recipe1() {
   return (
     <>
       <div className="container">
+      {riceFoodItem && (
+                    <div className="text-end fw-light p-3">
+                         <h3 className="fw-normal">{riceFoodItem.name}</h3>
+                        <div className="mt-2">
+                        <span>{riceFoodItem.national}</span>
+<span >  <i class="fa-solid fa-location-dot text-muted"></i> </span>
+                        </div>
+                    </div>
+                )} 
         <div className="row">
           <div className="col-4">
             <div className="card shadow p-3 mb-5 bg-body rounded">

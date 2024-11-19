@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { RiceMeat } from "../../data/RiceFood";
-import AsideLeft from "../../components/AsideLeft";
-import CardListFood from "../CardListFood";
-import FooterRazim from "../../components/FooterRazim";
-import ReviewForm from "../../components/ReviewForm";
+import AsideLeft from "../../components/other/AsideLeft";
+import CardListFood from "../../components/other/CardListFood";
+import FooterRazim from "../../components/other/FooterRazim";
+import ReviewForm from "../../components/other/ReviewForm";
 import CoconutDry from "../../components/property/CoconutDry";
 
 export default function RiceFood2() {

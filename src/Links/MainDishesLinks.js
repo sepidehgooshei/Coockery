@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import '../../src/pages/CardListFood.css'
+import "../components/other/CardListFood.css"
 export default function MainDishesLinks() {
   const MainLink =[
     { to: "/RiceFood1", name: "پسته پلو" },

@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Link } from "react-router-dom"; 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min'; 
-import "../dashboard.css";
+import "../dashboard/dashboard.css";
 import { getToCookToMake } from "../../data/ToCook"; 
-import FooterRazim from '../../components/FooterRazim';
+import FooterRazim from '../../components/other/FooterRazim';
 import { useScrollToTop } from '../../hooks/useScrollToTop';
 
 export default function OtherDishes() {

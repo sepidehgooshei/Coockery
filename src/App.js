@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Page imports
-import Dashboard from "../src/pages/Dashboard";
+import Dashboard from "../src/pages/dashboard/Dashboard";
 
-// import Recipe1 from "../src/pages/otherDishes/Recipe1";
 import Recipe1 from "../src/pages/otherDishes/Recipe1"
 import Recipe2 from "../src/pages/otherDishes/Recipe2";
 import Recipe3 from "../src/pages/otherDishes/Recipe3";
@@ -14,12 +13,10 @@ import Recipe7 from "../src/pages/otherDishes/Recipe7";
 import Recipe8 from "../src/pages/otherDishes/Recipe8";
 import Recipe9 from "../src/pages/otherDishes/Recipe9";
 
-
-
-import RiceWithMeat from "../src/pages/RiceWithMeat";
+import RiceWithMeat from "./pages/RiceFood/RiceWithMeat"
 
 import Login from "../src/components/header/Login";
-import Register from "../src/pages/Register";
+import Register from "../src/components/header/Register";
 import AppHeader from "./Header/AppHeader";
 import RiceFood1 from "./pages/RiceFood/RiceFood1";
 import RiceFood2 from "./pages/RiceFood/RiceFood2";
@@ -56,7 +53,6 @@ function App() {
      
         <Route path="login" element={<Login/>} />
         <Route path="register" element={<Register />} />
-        {/* Catch-all route for 404 Not Found */}
         <Route path="*" element={<NotFound />} />
       </Routes>
       </div>

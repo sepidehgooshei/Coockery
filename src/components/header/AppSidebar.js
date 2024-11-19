@@ -1,8 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./AppSidebar.css";
-import MainDishesLinks from "../MainDishesLinks";
-import OtherDishesLinks from "../OtherDishesLink";
-
+import OtherDishesLinks from "../../Links/OtherDishesLink";
+import MainDishesLinks from "../../Links/MainDishesLinks"
 
 export default function AppSidebar() {
   const [bar, setBar] = useState(false);

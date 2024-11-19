@@ -1,10 +1,10 @@
 import { useState } from "react";
 import {RiceMeat} from "../../data/RiceFood"
-import AsideLeft from "../../components/AsideLeft";
-import CardListFood from "../CardListFood";
-import ReviewForm from "../../components/ReviewForm";
+import AsideLeft from "../../components/other/AsideLeft";
+import CardListFood from "../../components/other/CardListFood";
+import ReviewForm from "../../components/other/ReviewForm";
 import BakingSoda from "../../components/property/BakingSoda"
-import FooterRazim from "../../components/FooterRazim";
+import FooterRazim from "../../components/other/FooterRazim";
 const riceMeatItem = RiceMeat[0]
  export default function RiceFood1() {
   const[open,setOpen] = useState(false)
