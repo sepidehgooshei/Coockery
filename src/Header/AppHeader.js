@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import AppHeaderWatch from "../components/header/AppHeaderWatch";
@@ -9,7 +10,7 @@ import Search from "../components/header/Search";
 export default function AppHeader() {
 
   return (
-    <div className="container-fluid position-relative sticky-top bg-white shadow-sm">
+    <div className="container-fluid sticky-top bg-white shadow-sm">
       <div className="row align-items-center py-2" style={{ backgroundColor: "#046865" }}>
         <div className="d-flex justify-content-between w-100">
           <AppHeaderWatch />

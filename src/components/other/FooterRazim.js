@@ -54,8 +54,15 @@ export default function FooterRazim() {
 </div>
 
 <div className="text-center py-3 mt-3 border-top border-secondary">
-     <p className="text-muted ">© 2024 کلیه حقوق برای سایت آشپزی محفوظ است. </p></div>
+     <p className="text-muted ">© 2024 کلیه حقوق برای سایت آشپزی محفوظ است. </p>
+<p className="text-muted">این سایت فقط جهت رزومه ساخته شده است </p>
 
+<p>
+  <span>سایت اصلی </span>
+  <a href="https://rezim.ir/" target="_blank">rezim.ir</a>
+</p>
+
+</div>
    
         </>
         
