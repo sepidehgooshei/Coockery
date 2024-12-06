@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from "react";
 export default function Register() {
     const [formData, setFormData] = useState({
@@ -11,7 +13,7 @@ export default function Register() {
         const { name, value, checked, type } = e.target;
         setFormData((prevData) => ({
             ...prevData,
-            [name]: type === "checkbox" ? checked : value,
+             [name]: type === "checkbox" ? checked : value,
         }));
     };
 

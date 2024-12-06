@@ -59,7 +59,7 @@ export default function FooterRazim() {
 
 <p>
   <span>سایت اصلی </span>
-  <a href="https://rezim.ir/" target="_blank">rezim.ir</a>
+  <a href="https://rezim.ir/" target="_blank" rel="noopener">rezim.ir</a>
 </p>
 
 </div>

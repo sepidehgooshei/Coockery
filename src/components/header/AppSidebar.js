@@ -7,23 +7,19 @@ export default function AppSidebar() {
   const [bar, setBar] = useState(false);
   const [openSection, setOpenSection] = useState(null);
   const barRef = useRef();
-
   function handleToggle(section) {
     setOpenSection((prevSection) => (prevSection === section ? null : section));
   }
-
   function handleClickClose() {
     setBar(false);
     setOpenSection(null);
   }
-
   const handleClick = () => {
     setBar((prev) => !prev);
     if (bar) {
       setOpenSection(null);
     }
   };
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (barRef.current && !barRef.current.contains(event.target)) {

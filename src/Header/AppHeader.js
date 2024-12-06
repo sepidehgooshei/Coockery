@@ -8,7 +8,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Search from "../components/header/Search";
 
 export default function AppHeader() {
-
   return (
     <div className="container-fluid sticky-top bg-white shadow-sm">
       <div className="row align-items-center py-2" style={{ backgroundColor: "#046865" }}>
