@@ -1,16 +1,42 @@
-import React, { useState } from "react";
-import {getToCookToMake} from "../../data/ToCook"
+import React, { useState,useEffect} from "react";
 import Mush from "../../components/property/Mush";
 import AsideLeft from "../../components/other/AsideLeft";
 import CardListFood from "../../components/other/CardListFood";
 import FooterRazim from "../../components/other/FooterRazim";
 import ReviewForm from "../../components/other/ReviewForm";
-const riceFoodItem= getToCookToMake[1]
 
 export default function Recipe2(){
-    const [isOpen, setIsOpen] = useState(false);
-    function handleChicken() {
-        setIsOpen((prev)=>!prev)
+  const [riceFoodItem,setRiceFoodItem] = useState(null);
+  const [loading,setLoading] = useState(true);
+  const [error,setError]= useState(null);  
+  const [open, setOpen] = useState(false);
+  useEffect(()=>{
+    async function fetchCookFoods(){
+      try{
+        const response = await fetch("http://localhost:9000/getToCookToMake");
+      if (!response.ok) {
+        throw new Error("Failed to fetch data");
+      }
+      const data = await response.json();
+      setRiceFoodItem(data[1])
+      }catch(error){
+setError(error.message)
+      }finally{
+setLoading(false)
+      }
+    }
+    fetchCookFoods()
+  },[])  
+  
+  function handleChicken() {
+        setOpen((prev)=>!prev)
+    }
+    if (loading) {
+      return <div className="text-center mt-5">در حال بارگذاری...</div>;
+    }
+
+    if (error) {
+      return <div className="text-center mt-5 text-danger">خطا: {error}</div>;
     }
    return(
     <>
@@ -32,10 +58,10 @@ export default function Recipe2(){
                 </div>
             </div>
             <div className="col-8">
-            {getToCookToMake.length > 0 && (
+            {riceFoodItem && (
               <img
-                src={getToCookToMake[1].image}
-                alt={getToCookToMake[1].title}
+                src={riceFoodItem.image}
+                alt={riceFoodItem.title}
                 className="img-fluid shadow p-3 mb-5 bg-body rounded" />
 
              
@@ -56,11 +82,11 @@ export default function Recipe2(){
                 <div className="card shadow p-3 mb-5 bg-body rounded text-end text-dark">
                    <div className="card-header d-flex justify-content-between">
                     <span onClick={handleChicken}
-                    ><i className={`fa-solid ${ isOpen ?"fa-minus" : "fa-plus"}`} style={{cursor:"pointer"}}></i></span>
+                    ><i className={`fa-solid ${ open ?"fa-minus" : "fa-plus"}`} style={{cursor:"pointer"}}></i></span>
 
                     <h3>👇 👩‍🍳 مواد لازم مرغ تنوری</h3>
                    </div>
-{ isOpen && (
+{ open && (
                    <div className="card-body shadow-none p-3 mb-5 bg-light rounded">
                    <p className="fs-6">پیاز : ۱ عدد بزرگ</p>
                     <p className="fs-6">سیب زمینی : ۲ عدد کوچک (برش های باریک بزنید)</p>

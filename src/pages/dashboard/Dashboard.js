@@ -1,18 +1,35 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './dashboard.css';
-import { RiceMeat } from '../../data/RiceFood';
-import { getToCookToMake } from '../../data/ToCook';
+
 import FooterRazim from '../../components/other/FooterRazim';
 import { useScrollToTop } from '../../hooks/useScrollToTop';
 
 export default function Dashboard() {
-  const allFoods = [...RiceMeat, ...getToCookToMake];
+const [allFoods,setAllFoods] = useState([])  
   const { showScrollButton, scrollToTop } = useScrollToTop();
 
   useEffect(() => {
+ async function fetchFoods() {
+  try {
+   const [getToCookToMakeResponse,RiceMeatResponse] = await Promise.all([
+   fetch(" http://localhost:9000/RiceMeat"),
+   fetch("http://localhost:9000/getToCookToMake")
+   ])
+
+   const getToCookToMake = await getToCookToMakeResponse.json();
+   const RiceMeat = await RiceMeatResponse.json()
+   setAllFoods([...getToCookToMake,...RiceMeat])
+  
+  }catch(error){
+    console.error("خطا در دریافت داده‌ها:", error);
+    
+  }
+ }
+    fetchFoods();
+   
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.map((tooltipTriggerEl) => new window.bootstrap.Tooltip(tooltipTriggerEl));
   }, []);

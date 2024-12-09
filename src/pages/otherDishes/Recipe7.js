@@ -1,19 +1,41 @@
-import React, { useState } from "react";
-import { getToCookToMake } from "../../data/ToCook";
+import React, { useEffect, useState } from "react";
 import AsideLeft from "../../components/other/AsideLeft";
 import CardListFood from "../../components/other/CardListFood";
 import FooterRazim from "../../components/other/FooterRazim";
 import ReviewForm from "../../components/other/ReviewForm";
 import WheatChildren from "../../components/property/WheatChildren";
-const riceFoodItem= getToCookToMake[6]
-
 
 export default function Recipe7() {
-    const[open,setOpen] = useState()
+const [riceFoodItem,setRiceFoodItem] = useState(null);
+const [loading,setLoading] = useState(true);
+const [error,setError] = useState(null);
+    const[open,setOpen] = useState(false);
    function handleToggle() {
     setOpen((prev)=>!prev)
    }
-    return(
+   useEffect(()=>{
+    async function fetchCookFoods() {
+      try{
+        const response = await fetch("http://localhost:9000/getToCookToMake");
+      if(!response.ok){
+        throw new Error("Failed to fetch data");
+      }
+const data = await response.json();
+setRiceFoodItem(data[6]);
+      }catch(error){
+setError(error.message);
+      }finally{
+setLoading(false);
+      }
+    }
+    fetchCookFoods();
+  },[]);
+  if (loading) {
+    return <div className="text-center mt-5">در حال بارگذاری...</div>;
+  }
+  if (error) {
+    return <div className="text-center mt-5 text-danger">خطا: {error}</div>;
+  }  return(
         <>
         <div className="container">
         {riceFoodItem && (
@@ -33,10 +55,10 @@ export default function Recipe7() {
           </div>
     
           <div className="col-8">
-            {getToCookToMake.length > 0 && (
+            {riceFoodItem && (
               <img
-                src={getToCookToMake[6].image}
-                alt={getToCookToMake[6].title}
+                src={riceFoodItem.image}
+                alt={riceFoodItem.title}
                 className="img-fluid shadow p-3 mb-5 bg-body rounded"
               />
             )}

@@ -1,0 +1,145 @@
+{
+    "RiceMeat": [
+      {
+        "id": 1,
+        "name": "طرز تهیه پسته پلو",
+        "image": "./assets/rice&meat/R&M.01.jpg",
+        "tiTip": "طرز تهیه پسته پلو",
+        "national": "ایرانی",
+        "path": "/RiceFood1"
+      },
+      {
+        "id": 2,
+        "name": "طرز تهیه جوجه حلزونی رستورانی",
+        "image": "./assets/rice&meat/R&M.02.jpg",
+        "tiTip": "طرز تهیه جوجه حلزونی رستورانی",
+        "national": "ایرانی",
+        "path": "/RiceFood2"
+      },
+      {
+        "id": 3,
+        "name": "طرز تهیه ته‌چین و برنج قالبی",
+        "image": "./assets/rice&meat/R&M.03.jpg",
+        "tiTip": "طرز تهیه ته‌چین و برنج قالبی",
+        "national": "ایرانی",
+        "path": "/RiceFood3"
+      },
+      {
+        "id": 4,
+        "name": "طرز تهیه ماهی سوخاری رستورانی",
+        "image": "./assets/rice&meat/R&M.04.jpg",
+        "tiTip": "طرز تهیه ماهی سوخاری رستورانی",
+        "national": "ایرانی",
+        "path": "/RiceFood4"
+      },
+      {
+        "id": 5,
+        "name": "طرز تهیه دمپختک دمی باقالی اصفهانی",
+        "image": "./assets/rice&meat/R&M.05.jpg",
+        "tiTip": "طرز تهیه دمپختک دمی باقالی اصفهانی",
+        "national": "ایرانی",
+        "path": "/RiceFood5"
+      },
+      {
+        "id": 6,
+        "name": "طرز تهیه میگو سرخ شده",
+        "image": "./assets/rice&meat/R&M.06.jpg",
+        "tiTip": "طرز تهیه میگو سرخ شده",
+        "national": "ایرانی",
+        "path": "/RiceFood6"
+      }
+    ],
+    "getToCookToMake": [
+      {
+        "id": 1,
+        "name": "طرز تهیه یتیمچه",
+        "title": "یتیمچه",
+        "image": "./assets/brand/food.1.jpg",
+        "time": "4اسفند",
+        "path": "/recipe1",
+        "tiTip": "طرز تهیه یتیمچه",
+        "national": "ایرانی"
+      },
+      {
+        "id": 2,
+        "name": "طرز تهیه مرغ تنوری",
+        "title": "مرغ تنوری",
+        "image": "./assets/brand/food.2.jpg",
+        "time": "اسفند4",
+        "path": "/recipe2",
+        "tiTip": "طرز تهیه مرغ تنوری",
+        "national": "ایرانی"
+      },
+      {
+        "id": 3,
+        "name": "طرز تهیه پیتزا تابه ای",
+        "title": "پیتزا تابه ای",
+        "image": "./assets/brand/food.3.jpg",
+        "time": "4اسفند",
+        "path": "/recipe3",
+        "tiTip": "طرز تهیه پیتزا تابه ای",
+        "national": "ایرانی"
+      },
+      {
+        "id": 4,
+        "name": "طرز تهیه خوراک بادمجان",
+        "title": "خوراک بادمجان",
+        "image": "./assets/brand/food.4.jpg",
+        "time": "4اسفند",
+        "path": "/recipe4",
+        "tiTip": "طرز تهیه خوراک بادمجان",
+        "national": "ایرانی"
+      },
+      {
+        "id": 5,
+        "name": "طرز تهیه بادمجان تابه ای",
+        "title": "بادمجان تابه ای",
+        "image": "./assets/brand/food.5.jpg",
+        "time": "4اسفند",
+        "path": "/recipe5",
+        "tiTip": "طرز تهیه بادمجان تابه ای",
+        "national": "ایرانی"
+      },
+      {
+        "id": 6,
+        "name": "طرز تهیه دو پیازه آلو شیرازی",
+        "title": "دو پیازه آلو شیرازی",
+        "image": "./assets/brand/food.6.jpg",
+        "time": "4اسفند",
+        "path": "/recipe6",
+        "tiTip": "طرز تهیه دو پیازه آلو شیرازی",
+        "national": "ایرانی"
+      },
+      {
+        "id": 7,
+        "name": "طرز تهیه سالاد گرم اسفناج (با طعم سس آلفردو)",
+        "title": "سالاد گرم اسفناج",
+        "image": "./assets/brand/food.7.jpg",
+        "time": "4اسفند",
+        "path": "/recipe7",
+        "tiTip": "طرز تهیه سالاد گرم اسفناج (با طعم سس آلفردو)",
+        "national": "بین المللی"
+      },
+      {
+        "id": 8,
+        "name": "طرز تهیه اسکالوپ مرغ ",
+        "image": "./assets/brand/food.8.jpg",
+        "title": " اسکالوپ مرغ",
+        "time": "4اسفند",
+        "path": "/recipe8",
+        "tiTip": "طرز تهیه اسکالوپ مرغ ",
+        "national": "بین المللی"
+      },
+      {
+        "id": 9,
+        "name": "طرز تهیه بولانی افغان ",
+        "image": "./assets/brand/food.9.jpg",
+        "title": " بولانی افغان",
+        "time": "4اسفند",
+        "path": "/recipe9",
+        "tiTip": " طرز تهیه بولانی افغان ",
+        "national": "بین المللی"
+      }
+    ]
+  }
+  
