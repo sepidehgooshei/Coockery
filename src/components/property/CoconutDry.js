@@ -25,30 +25,3 @@ export default function CoconutDry() {
 }
 
 
-
-
-// export default function CoconutDry() {
-//     return(
-//         <div className="card shadow p-3 mb-5 bg-body rounded">
-//         <img
-//         src="../../assets/skin/baking-soda.jpg"
-//         alt="Baking soda"
-//         className="img-fluid"
-//         />
-//         <h6 className="m-3 text-end"> خواص نارگیل خشک</h6>
-//         <div className="card-body text-end">
-//         <div className="card-title">خواص ضد التهابی نارگیل خشک</div>
-//         <div className="card-text">
-//         <p className="lh-lg">
-//         نارگیل خشک یک ماده غذایی با خواص فوق العاده برای سلامتی است که از آن به عنوان یک منبع غنی از ویتامین‌ها، مواد معدنی و آنتی‌اکسیدان‌ها استفاده می‌شود. یکی از خواص برجسته نارگیل خشک، خاصیت ضد التهابی آن است که می‌تواند به بهبود وضعیت سلامتی کمک کند.
-//           </p>
-//           <div className="card-title">خواص ضد باکتریایی نارگیل خشک</div>
-//         <div className="card-text">
-//         <p className="lh-lg">
-//         نارگیل خشک همچنین حاوی مواد ضد اکسیدانی مانند فنول‌ها و فلاونوئیدها است که می‌توانند در مقابله با آسیب‌های اکسیداتیو و التهابی کمک کنند. این مواد ضد اکسیدانی می‌توانند به حفظ سلامت پوست، کاهش التهابات و حفظ سلامت دستگاه گوارش کمک کنند.
-//           </p>
-//         </div>
-//          </div>
-//       </div>  
-//     )
-// }

@@ -3,7 +3,7 @@ import "../components/other/CardListFood.css"
 export default function MainDishesLinks() {
   const MainLink =[
     { to: "/RiceFood1", name: "پسته پلو" },
-    { to: "/RiceFood2", name: "کلم پلو شیرازی با کلم قمری" },
+    { to: "/RiceFood2", name: " جوجه رستورانی" },
     { to: "/RiceFood3", name: "ته چین و برنج فالبی" },
     { to: "/RiceFood4", name: "ماهی سرخ شده رستورانی" },
     { to: "/RiceFood5", name: "دم پختک دمی باقالی اصفهانی" },

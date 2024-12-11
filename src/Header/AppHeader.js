@@ -24,7 +24,7 @@ export default function AppHeader() {
       <div className="row my-2 align-items-center">
         <div className="col-auto">
           <a className="navbar-brand" href="#">
-            <img src="../assets/skin/logonew2.png" alt="rezim" height="50" width="100" className="d-inline-block align-text-top"/>
+            <img src="../assets/icon/hat-logo.jpg" alt="hat-cookery" height="70" width="100" className="d-inline-block align-text-top"/>
           </a>
         </div>
         
