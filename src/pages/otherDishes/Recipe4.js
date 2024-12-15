@@ -3,7 +3,7 @@ import AsideLeft from "../../components/other/AsideLeft";
 import CardListFood from "../../components/other/CardListFood";
 import FooterRazim from "../../components/other/FooterRazim";
 import ReviewForm from "../../components/other/ReviewForm";
-import Coconut from "../../components/property/Coconut";
+import WhiteEggplant from "../../components/property/WhiteEggplant";
 
 
 export default function Recipe4(){
@@ -102,8 +102,7 @@ fetchCookFoods()
                    <p className="fs-6">بادمجون : ۲ عدد متوسط</p>
                    <h6>:طرز تهیه</h6>
                    <p className="fs-6 lh-lg">
-                     ابتدا پیاز نگینی تفت بدید داخل روغن تا سبک بشه سپس فلفل دلمه و سیر سرخ کنید بعد ۱ دقیقه مرغ اضافه کنید و بعد از تغییر رنگ مرغ ادویه ها و رب اضافه و کمی سرخ کنید در آخرین مرحله بادمجون های سرخ کرده و نصف لیوان آب اضافه کنید و درب تابه بزارید و اجازه بدید
-                     با شعله کم بپزه بعد از ۱۰ دقیقه شام شما آماده ست،نوش جان.
+                   ابتدا پیاز را خرد کرده و در مقداری روغن تفت دهید تا نرم و طلایی شود. سپس سیر را رنده کرده و اضافه کنید. سینه مرغ را به قطعات کوچک خرد کرده و به پیاز و سیر اضافه کنید تا کمی سرخ شود. فلفل دلمه‌ای را خرد کرده و به مرغ و پیاز اضافه کنید. حالا رب گوجه فرنگی، نمک، زردچوبه، فلفل سیاه را به مواد اضافه کرده و هم بزنید. آب جوش را بریزید و بگذارید تا مرغ پخته شود. بادمجان‌ها را حلقه‌ای برش داده و در روغن سرخ کنید. بعد از اینکه مرغ و مواد کمی جا افتادند، بادمجان‌ها را به خوراک اضافه کرده و اجازه دهید تا خوراک کاملاً جا بیفتد. در نهایت، غذا آماده است
                    </p>
                  </div>
                )}
@@ -115,10 +114,8 @@ fetchCookFoods()
        <div className="container mt-4">
          <div className="row">
            <div className="col-4">
-            <div className="card shadow p-3 mb-5 bg-body rounded">
-            <Coconut />
+            <WhiteEggplant />
 
-            </div>
            </div>
                 <div className="col-8">
             <div className="card shadow p-3 mb-5 bg-body rounded">

@@ -3,7 +3,7 @@ import AsideLeft from "../../components/other/AsideLeft";
 import CardListFood from "../../components/other/CardListFood";
 import FooterRazim from "../../components/other/FooterRazim";
 import ReviewForm from "../../components/other/ReviewForm";
-import LentilsForChild from "../../components/property/LentilsForChild";
+import Mushroom from "../../components/property/Mushroom";
 
 export default function Recipe8() {
    const[riceFoodItem,setRiceFoodItem] = useState(null);
@@ -117,7 +117,7 @@ setLoading(false)
             <div className="row">
                <div className="col-4">
     
-              <LentilsForChild/>
+              <Mushroom/>
 
                 </div>
                <div className="col-8">

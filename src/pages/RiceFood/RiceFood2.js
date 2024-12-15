@@ -4,7 +4,7 @@ import AsideLeft from "../../components/other/AsideLeft";
 import CardListFood from "../../components/other/CardListFood";
 import FooterRazim from "../../components/other/FooterRazim";
 import ReviewForm from "../../components/other/ReviewForm";
-import CoconutDry from "../../components/property/CoconutDry";
+import Saffron from "../../components/property/Saffron";
 
 export default function RiceFood2() {
   const [riceMeatItem, setRiceMeatItem] = useState(null);
@@ -113,7 +113,7 @@ setError(error.message)
         <div className="row">
           <div className="col-4">
 
- <CoconutDry/>
+ <Saffron/>
  
            </div>
 

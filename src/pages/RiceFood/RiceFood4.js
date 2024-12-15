@@ -4,7 +4,7 @@ import AsideLeft from "../../components/other/AsideLeft";
 import CardListFood from "../../components/other/CardListFood";
 import FooterRazim from "../../components/other/FooterRazim";
 import ReviewForm from "../../components/other/ReviewForm";
-import WheatMen from "../../components/property/WheatMen";
+import Fish from "../../components/property/Fish";
 
 export default function RiceFood4() {
   const [riceMeatItem, setRiceMeatItem] = useState(null);
@@ -93,25 +93,27 @@ export default function RiceFood4() {
               {open && (
                 <div className="card-body shadow-none p-3 mb-5 bg-light rounded">
                   <p className="fs-6">آب لیمو :۳ قاشق غذاخوری</p>
-                  <p className="fs-6">آب پیاز :یک عدد رنده شده</p>
+                  <p className="fs-6">آب پیاز : یک عدد رنده شده</p>
                   <p className="fs-6">زعفران دم کرده : ۳ قاشق غذا خوری</p>
                   <p className="fs-6">سیر : ۳ حبه بزرگ</p>
                   <p className="fs-6">نمک : ۱ قاشق چای خوری</p>
                   <p className="fs-6">زردچوبه : ۱ قاشق چای خوری</p>
                   <p className="fs-6">زنجبیل : ۱ قاشق چای خوری</p>
                   <p className="fs-6">فلفل سیاه : نصف قاشق چای خوری ۱/۲</p>
-                  <p className="fs-6">مواد لازم آرد سوخاری :</p>
+                  <p className="fs-6"> : مواد لازم آرد سوخاری </p>
                   <p className="fs-6">آرد سفید : ۱۰۰ گرم</p>
                   <p className="fs-6">نمک : یک قاشق چای خوری</p>
                   <p className="fs-6">زردچوبه : یک قاشق مربا خوری</p>
                   <p className="fs-6">پودر سیر : یک قاشق چای خوری</p>
                   <h6>: طرز تهیه</h6>
                   <p className="fs-6 lh-lg">
-                    ۱- انتخاب نوع ماهی به سلیقه شماست ، این مدل سوخاری برای
-                    ماهی قزل آلا عالی میشه ،من در این ویدئو از ماهی صافی دریای
-                    جنوب استفاده کردم . حتما ماهی داخل روغن داغ سرخ کنید. شعله
-                    گاز بعد از داغ شدن روغن کمی ،کمتر کنید تا ماهی کاملا پخته
-                    شود
+                  ابتدا ماهی مورد نظر (ماهی سفید، قزل‌آلا یا هر نوع ماهی دیگر) را تمیز کرده و از پولک‌ها و استخوان‌های آن خلاص کنید.
+                  ماهی را شسته و خشک کنید.در یک کاسه بزرگ، آب لیمو، آب پیاز، زعفران دم‌کرده، سیر رنده‌شده، نمک، زردچوبه، زنجبیل و فلفل سیاه را با هم مخلوط کنید.
+ماهی‌ها را در این مخلوط قرار داده و خوب با دست یا قاشق ماساژ دهید تا تمام قسمت‌های ماهی به مواد ماریناد آغشته شود.
+کاسه را بپوشانید و اجازه دهید ماهی‌ها حداقل ۳۰ دقیقه تا یک ساعت در یخچال استراحت کنند تا طعم‌ها به خورد ماهی بروند.در یک کاسه، آرد سفید را با نمک، زردچوبه و پودر سیر مخلوط کنید.
+ماهی‌های مارینه‌شده را از کاسه خارج کرده و در مخلوط آرد سوخاری بغلتانید تا تمام سطح ماهی به آرد آغشته شود
+
+
                   </p>
                 </div>
               )}
@@ -123,7 +125,7 @@ export default function RiceFood4() {
       <div className="container mt-4">
         <div className="row">
           <div className="col-4">
-            <WheatMen />
+            <Fish />
           </div>
 
           <div className="col-8">

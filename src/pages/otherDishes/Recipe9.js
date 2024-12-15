@@ -3,7 +3,7 @@ import AsideLeft from "../../components/other/AsideLeft";
 import CardListFood from "../../components/other/CardListFood";
 import FooterRazim from "../../components/other/FooterRazim";
 import ReviewForm from "../../components/other/ReviewForm";
-import BarberryBlack from "../../components/property/BarberryBlack";
+import Wheat from "../../components/property/Wheat";
 
 export default function Recipe9() {
 const[riceFoodItem,setRiceFoodItem] = useState(null);
@@ -119,7 +119,7 @@ if (loading) {
       <div className="container mt-4">
             <div className="row">
                <div className="col-4">
-<BarberryBlack/>
+<Wheat/>
 
                </div>
                <div className="col-8">

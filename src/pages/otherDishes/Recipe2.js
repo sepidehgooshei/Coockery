@@ -1,9 +1,9 @@
 import React, { useState,useEffect} from "react";
-import Mush from "../../components/property/Mush";
 import AsideLeft from "../../components/other/AsideLeft";
 import CardListFood from "../../components/other/CardListFood";
 import FooterRazim from "../../components/other/FooterRazim";
 import ReviewForm from "../../components/other/ReviewForm";
+import Chicken from "../../components/property/Chicken";
 
 export default function Recipe2(){
   const [riceFoodItem,setRiceFoodItem] = useState(null);
@@ -101,7 +101,19 @@ setLoading(false)
                     <p className="fs-6">زردچوبه : یک قاشق چای خوری</p>
                     <p className="fs-6"> فلفل دلمه : نصف یک فلفل دلمه کوچک </p>
                     <h6> :طرز تهیه</h6>
-                    <p className="fs-6 lh-lg">پیاز و سیب زمینی ها رو به صورت حلقه های نازک در بیاورید ، داخل ظرف بچینید، ران مرغ بدون استخوان یا فیله مرغ روی مواد بزارید و سیرهای خورد شده بین مواد قرار بدید ، سس درست کنید خوب هم بزنید و روی مواد بریزید .ظرف داخل فر ۲۳۰ درجه به مدت ۴۰ دقیقه قرار بدید ،۵ دقیقه آخر شعله بالایی روشن کنید تا روی مرغ ها برشته شود .این غذا داخل تابه هم میتونید درست کنید.🩵🌿</p>
+                    <p className="fs-6 lh-lg">
+
+                    پیاز را پوست کنده و خرد کنید.
+سیب‌زمینی‌ها را پوست کنده و به صورت برش‌های باریک یا ورقه‌ای خرد کنید.
+مرغ (فیله یا ران مرغ) را شسته و به اندازه دلخواه برش دهید.
+سیرها را ریز خرد یا له کنید.
+فلفل دلمه‌ای را به صورت نگینی خرد کنید.در یک قابلمه یا ماهیتابه، ۲ قاشق غذاخوری روغن بریزید و روی حرارت متوسط قرار دهید.
+پیازهای خرد شده را اضافه کنید و تفت دهید تا طلایی و نرم شوند.
+سیر خرد شده را به پیاز اضافه کنید و کمی دیگر تفت دهید تا بوی سیر به مشام برسد.مرغ‌های خرد شده (فیله یا ران مرغ) را به پیاز و سیر اضافه کنید و با مواد دیگر تفت دهید.
+مرغ را برای چند دقیقه تفت دهید تا کمی رنگ آن تغییر کند.نمک، آویشن، پاپریکا، فلفل سیاه و زردچوبه را به مرغ اضافه کنید و مواد را به‌خوبی با هم مخلوط کنید تا مرغ‌ها به ادویه‌ها آغشته شوند.سیب‌زمینی‌های خرد شده را به قابلمه اضافه کنید و کمی تفت دهید تا کمی نرم شوند.
+فلفل دلمه‌ای خرد شده را نیز اضافه کنید و هم بزنید
+                      
+                      </p>
                     
 
                    </div>)}
@@ -112,7 +124,7 @@ setLoading(false)
            <div className="container mt-4">
             <div className="row">
                 <div className="col-4">
-                    <Mush/>
+                    <Chicken/>
                 </div>
                 <div className="col-8">
                     <div className="card shadow p-3 mb-5 bg-body rounded">

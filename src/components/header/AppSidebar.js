@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./AppSidebar.css";
-import OtherDishesLinks from "../../Links/OtherDishesLink";
-import MainDishesLinks from "../../Links/MainDishesLinks"
-
+import DishesLinks from "../../Links/DishesLinks"
 export default function AppSidebar() {
   const [bar, setBar] = useState(false);
   const [openSection, setOpenSection] = useState(null);
@@ -73,10 +71,9 @@ export default function AppSidebar() {
               </div>
 
               {openSection === "mainDishes" && (
-                <div>
-     <MainDishesLinks/>
-     <OtherDishesLinks/>
-
+                <div className="p-3">
+ 
+<DishesLinks/>
                 </div>
       
            )}

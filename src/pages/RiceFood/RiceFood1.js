@@ -3,7 +3,7 @@ import "../../pages/dashboard/dashboard.css";
 import AsideLeft from "../../components/other/AsideLeft";
 import CardListFood from "../../components/other/CardListFood";
 import ReviewForm from "../../components/other/ReviewForm";
-import BakingSoda from "../../components/property/BakingSoda";
+import Pistachio from "../../components/property/Pistachio";
 import FooterRazim from "../../components/other/FooterRazim";
 
 export default function RiceFood1() {
@@ -115,7 +115,7 @@ export default function RiceFood1() {
       <div className="container mt-4">
         <div className="row">
           <div className="col-4">
-            <BakingSoda />
+            <Pistachio/>
           </div>
           <div className="col-8">
             <div className="card shadow p-3 mb-5 bg-body rounded">
